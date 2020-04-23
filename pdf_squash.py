@@ -4,9 +4,14 @@ import PyPDF2
 def main():
     '''Concatenate pdfs into one pdf'''
 
-	'''Debugging: if given an error such as: PyPDF2.utils.PdfReadError: File has not been 	decrypted, 	then run qpdf --password='' --decrypt <inputfile>.pdf <outputfile>.pdf in the terminal first'''
-	
-    print("Enter the directory path that you wish to squash pdf's in\n Enter '.' if pdfs are in 	the current directory:")
+    '''
+        Debugging: if given an error such as: PyPDF2.utils.PdfReadError:
+        File has not been decrypted, then run
+        qpdf --password='' --decrypt <inputfile>.pdf <outputfile>.pdf
+        in the terminal first
+    '''
+
+    print("Enter the directory path that you wish to squash pdf's in\n Enter '.' if pdfs are in the current directory:")
     os.chdir(input())
 
     print("number of pdf's to squash?")
